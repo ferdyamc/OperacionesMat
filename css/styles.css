@@ -5,14 +5,20 @@
     text-decoration: none;
     list-style: none;
 }
+body{
+    height: 100vh;
+    width: 100vw;
+}
 /*header*/
 .header-p nav{
     height: 60px;
+    overflow: auto;
 }
 
 .titulo-pagina{
     line-height:60px;
     font-size: 1.5em;
+    margin-left: 10px;
 }
 /*menu lateral*/
 .menu-lateral{
@@ -24,6 +30,7 @@
     overflow: hidden;
     transition: .1s ease-in-out;
     z-index: 111;
+    min-width: 60px;
 }
 .btn-menu{
     width: 40px;
@@ -60,11 +67,14 @@
     height: calc(100vh - 60px);
     background-image: url("../img/fondo-seccion.jpg");
     background-size: cover;
+    overflow: auto;
+    
 }
 .seccion{
     height: 100%;
     padding: 50px;
     margin: 0;
+    overflow: auto;
 }
 #contenedor-calculadora{
     width: 50%;
